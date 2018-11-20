@@ -1,0 +1,74 @@
+body{
+	padding-top:8%;
+}
+#koszyk-zaw{
+	border-radius:3px;
+	margin-right:3%;
+	margin-left:3%;
+	padding:1%;
+	box-shadow: 1px 1px 3px 1px  rgba(150,150,150,0.6) !Important;
+}
+#dane{
+	padding-left:4%;
+	font-size:1em !Important;
+	font-weight:normal;
+}
+#dane-btn{
+	box-shadow: 0px 1px 3px  rgba(0,0,0,0.6) !Important;
+	border-radius:10px;
+	font-weight: bold;
+	margin-top:5%;
+	font-size:0.9em !Important;
+}
+#prod{
+	overflow: auto;
+	border-radius:2px;
+	padding:0.5%;
+	height:auto!Important;
+	border: 2px solid #969696;
+	margin-left:3%;
+	margin-right:3%;
+}
+#prod > *{
+	font-weight:normal;
+	margin-right:1%;
+}
+#usun{
+	margin-left:2%;
+	font-weight:bold !Important;
+}
+#ile{
+	width:5%;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input{
+	text-align:center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.contr{
+	font-weight: bold !Important;
+}
+.suma > *{
+	font-weight: bold !Important;
+}
+#zamow{
+	box-shadow: 0px 1px 3px  rgba(0,0,0,0.6) !Important;
+	border-radius:10px;
+	font-weight: bold;
+	margin-top:1%;
+	margin-right:3%;
+	margin-bottom:2%;
+}
+@media (max-width: 768px){
+	body{
+		padding-top:18%;
+	}
+	#koszyk-zaw{
+		margin-top:5%;
+	}
+}

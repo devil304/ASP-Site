@@ -1,0 +1,84 @@
+body{
+	padding-top:5%;
+}
+#przyciski{
+	margin-left:2%;
+}
+#wyl-btn,#ch-btn, #e-btn{
+	box-shadow: 0px 1px 3px  rgba(0,0,0,0.6) !Important;
+	border-radius:10px;
+	font-weight: bold;
+	margin-top:5%;
+	font-size:0.75em !Important;
+	margin-bottom:2%;
+}
+#e-btn{
+	margin-top:2%;
+}
+
+#dane{
+	margin-top:1%;
+	border-radius:3px;
+	margin-right:8%;
+	padding:1%;
+	box-shadow: 1px 1px 3px 1px  rgba(150,150,150,0.6) !Important;
+}
+#dane > *{
+	font-weight: normal !Important;
+	font-size: 0.75em !Important;
+}
+.zam-d{
+	max-height:80%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#adm-tools{
+	margin-top:3%;
+	margin-right:1%;
+}
+.bt{
+	background-color: #e6e6e6;
+	border-color: #d4d4d4 !Important;
+	text-align:left;
+}
+#k{
+	margin-top:2%;
+}
+#prod{
+	position:relative;
+	width:95%;
+	overflow: auto;
+	border-radius:2px;
+	padding:0.5%;
+	height:auto!Important;
+	border: 2px solid #969696;
+	margin-left:3%;
+	margin-right:3%;
+}
+#prod > *{
+	font-size: 1em !Important;
+	margin-left:4%;
+	font-weight:normal;
+	margin-right:5%;
+}
+.small-p > button{
+	padding:0;
+}
+.small-p{
+	font-size: 0.75em !Important;
+}
+.h{
+	margin-top:5%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #969696;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #969696;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #969696;
+}
