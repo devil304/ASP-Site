@@ -81,7 +81,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	$("#start,#l-n").each(function(){
+    $("#start,#l-n,#kontakt").each(function(){
 		$(this).attr( "href", "#" );
 	});
 	

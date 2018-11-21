@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "AccData";
+}
+@section Styles {
+    <link href="@Url.Content("~/Styles/konto.css")" rel="stylesheet" type="text/css" />
+}
+<div id="przyciski" class="float-left col-12 col-md-2">
+    <button type="button" class="btn btn-light" id="wyl-btn">Wyloguj</button><br><br>
+    <div id="con" class="btn-group-vertical">
+        <button type="button" class="btn btn-light bt">Dane Konta</button>
+        <button type="button" class="btn btn-light bt">Zamówienia</button>
+        <button type="button" class="btn btn-light bt">Konta</button>
+    </div>
+</div>
+
+<div id="adm-tools" class="float-right col-11 col-md-2">
+    Typ konta:
+    <select name="typ" id="ch-konto">
+        <option value="cli">Klient</option>
+        <option value="emp">Pracownik</option>
+        <option value="adm">Administrator</option>
+    </select>
+    <button type="button" class="btn btn-light" id="ch-btn">Zmień</button>
+</div>
+<h1 id="k">Konto:</h1>
+<div id="dane" class="float-right col-11 col-md-6">
+    <div id="basic">
+        Podstawowe:<br>
+        Nazwa: <input type="text" value="Staszek" readonly><br>
+        Mail: <input type="text" value="staszek@mail.pl" readonly><br>
+        <button type="button" class="btn btn-light" id="e-btn">Edytuj</button><br>
+    </div>
+    <hr>
+    <div id="sec">
+        Zabezpieczenia:<br>
+        Hasło: <input type="password" value="********" readonly><br>
+        <button type="button" class="btn btn-light" id="e-btn">Edytuj</button><br><input id="c-p" type="password" placeholder="wpisz hasło aby edytować"><br>
+    </div>
+    <hr>
+    <div id="smisc">
+        Dodatkowe:<br>
+        Imię: <input type="text" value="N/A" readonly><br>
+        Nazwisko: <input type="text" value="N/A" readonly><br>
+        <button type="button" class="btn btn-light" id="e-btn">Edytuj</button><br>
+    </div>
+</div>

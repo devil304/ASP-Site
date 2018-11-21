@@ -1,31 +1,68 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "ASP.Net Site";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/home.js")"></script>
+}
+@section Styles {
+    <link href="@Url.Content("~/Styles/style-home.css")" rel="stylesheet" type="text/css" />
+}
+<div class="row m-0" id="a-wrapper">
+    <div class="col-12 p-0 h-100 w-100" id="slider">
+        <div id="slider-wlasciwy" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner w-100">
+                <div class="carousel-item w-100 active">
+                    <img class="d-block" src="@Href("~/img/slider/1.jpg")" alt="First slide">
+                </div>
+                <div class="carousel-item w-100">
+                    <img class="d-block" src="@Href("~/img/slider/2.jpg")" alt="Second slide">
+                </div>
+                <div class="carousel-item w-100">
+                    <img class="d-block" src="@Href("~/img/slider/3.jpg")" alt="Third slide">
+                </div>
+                <div class="carousel-item w-100">
+                    <img class="d-block" src="@Href("~/img/slider/4.jpg")" alt="Fourth slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#slider-wlasciwy" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slider-wlasciwy" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="h-100 row w-100  m-0">
+    <div class="h-100 col-12 pr-0" id="reklama1">
+        <div class="h-100 col-md-12 col-lg-6 float-left" id="tekst-con1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam turpis mi, condimentum et vehicula consequat, porttitor sed elit. Quisque sit amet arcu porta, eleifend eros a, suscipit nulla. Nam convallis rutrum enim in blandit. Donec id porttitor metus, ac tincidunt augue. Suspendisse eget nisi in elit accumsan fermentum ut ut nibh. Donec vestibulum mauris vitae justo convallis porttitor. Nam pretium consequat mauris, eu pharetra lacus efficitur vel. Duis tempus ullamcorper felis, nec fringilla lorem volutpat rutrum. Nulla et nisi ultrices, egestas libero a, fringilla arcu. Donec commodo porttitor diam nec tincidunt. Donec ac justo rutrum, posuere enim in, consequat metus. Ut mollis ac nibh vel luctus. Integer molestie iaculis eros nec sollicitudin. Donec non purus ut risus dictum posuere vel vitae nibh.</p>
+            <p>Morbi tempor, nisi in molestie convallis, nisi metus aliquet ante, non accumsan mi nunc eget erat. Vestibulum convallis tempor eros at sodales. Etiam convallis est et tempus vehicula. Donec congue nisl vitae libero vestibulum egestas ut nec ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In facilisis feugiat tellus, id facilisis libero scelerisque in. Integer elementum felis ex, eu scelerisque leo vulputate eget. Nunc eu velit vel est rutrum efficitur.</p>
+        </div>
+        <div class="h-100 col-md-0 col-lg-6 float-right pr-0" id="obraz">
+            <img class="h-100" src="@Href("~/img/r1.jpg")" alt="R1 Image">
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+</div>
+
+<div class="h-100 row w-100 m-0">
+    <div class="h-100 col-12 pl-0" id="reklama2">
+        <div class="h-100 col-md-12 col-lg-6 float-left pl-0" id="obraz">
+            <img class="h-100" src="@Href("~/img/r1.jpg")" alt="R1 Image">
+        </div>
+        <div class="h-100 col-md-0 col-lg-6 float-right" id="tekst-con2">
+            <p>Duis convallis, est quis laoreet aliquam, tellus sapien laoreet nulla, sed semper neque est vel felis. Vivamus congue ultricies ante at lacinia. Quisque varius dui ac ultrices maximus. Fusce lacus metus, malesuada bibendum rutrum sit amet, gravida et nunc. Nunc neque ex, ullamcorper a nisi quis, iaculis laoreet justo. Nullam dignissim sit amet purus vel dignissim. In quis nulla consequat, porta felis id, vehicula eros. Nunc pretium nibh vitae justo tincidunt, eu ullamcorper ipsum efficitur. Nam nibh mi, dignissim eu iaculis ac, feugiat eget mauris. Quisque rhoncus et leo at egestas. Suspendisse at mollis nulla. Etiam at dui tincidunt lectus consequat vehicula. Nam porttitor ex nec lobortis consectetur.</p>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+</div>
+
+<div class="row w-100 m-0">
+    <div class="col-12" id="stopka-kontakt">
+        To jest stopka, tu powinny znajdować się wszelakie informacje jak numer telefonu itp.<br>
+        Mail czy inny fax;
     </div>
 </div>

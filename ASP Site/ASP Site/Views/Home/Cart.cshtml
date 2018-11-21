@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Cart";
+}
+@section Styles {
+    <link href="@Url.Content("~/Styles/koszyk.css")" rel="stylesheet" type="text/css" />
+}
+<div id="dane" class="float-left col-12 col-md-2">
+    <div id="nazwa-dane"></div>Nazwa: Staszek<br>
+    <div id="mail-dane"></div>Mail: sztaszek@mail.pl<br>
+    <button type="button" class="btn btn-light" id="dane-btn">Dane</button>
+</div>
+<div id="koszyk-zaw" class="float-right col-11 col-md-9">
+    <div id="n1">Koszyk: </div><br>
+    <div id="prod">
+        <div class="float-left" id="nazwa">Rura 20mm</div>
+        <div class="float-right" id="ceny">100/10 zł</div>
+        <button type="button" class="float-right btn btn-light" id="usun">X</button>
+        <button type="button" class="float-right btn btn-light contr" id="M">˅</button>
+        <input id="ile" class="float-right" type="number" value="5">
+        <button type="button" class="float-right btn btn-light contr" id="W">˄</button>
+    </div>
+    <div id="prod">
+        <div class="float-left" id="nazwa">Rura 20mm</div>
+        <div class="float-right" id="ceny">100/10 zł</div>
+        <button type="button" class="float-right btn btn-light" id="usun">X</button>
+        <button type="button" class="float-right btn btn-light contr" id="M">˅</button>
+        <input id="ile" class="float-right" type="number" value="5">
+        <button type="button" class="float-right btn btn-light contr" id="W">˄</button>
+    </div>
+    <div id="prod">
+        <div class="float-left" id="nazwa">Rura 20mm</div>
+        <div class="float-right" id="ceny">100/10 zł</div>
+        <button type="button" class="float-right btn btn-light" id="usun">X</button>
+        <button type="button" class="float-right btn btn-light contr" id="M">˅</button>
+        <input id="ile" class="float-right" type="number" value="5">
+        <button type="button" class="float-right btn btn-light contr" id="W">˄</button>
+    </div>
+    <div id="prod">
+        <div class="float-left" id="nazwa">Rura 20mm</div>
+        <div class="float-right" id="ceny">100/10 zł</div>
+        <button type="button" class="float-right btn btn-light" id="usun">X</button>
+        <button type="button" class="float-right btn btn-light contr" id="M">˅</button>
+        <input id="ile" class="float-right" type="number" value="5">
+        <button type="button" class="float-right btn btn-light contr" id="W">˄</button>
+    </div>
+    <div id="prod">
+        <div class="float-left" id="nazwa">Rura 20mm</div>
+        <div class="float-right" id="ceny">100/10 zł</div>
+        <button type="button" class="float-right btn btn-light" id="usun">X</button>
+        <button type="button" class="float-right btn btn-light contr" id="M">˅</button>
+        <input id="ile" class="float-right" type="number" value="5">
+        <button type="button" class="float-right btn btn-light contr" id="W">˄</button>
+    </div>
+    <div id="prod" class="suma">
+        <div class="float-left" id="nazwa">Suma: </div>
+        <div class="float-right" id="ceny">500 zł</div>
+    </div>
+    <button type="button" class="float-right btn btn-light" id="zamow">Zamów</button>
+
+</div>

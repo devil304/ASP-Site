@@ -19,28 +19,9 @@ namespace ASP_Site
             bundles.Add(new ScriptBundle("~/bundles/temp").Include(
                      "~/Scripts/temp-script.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/home").Include(
-                     "~/Scripts/home.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/prod").Include(
-                     "~/Scripts/prod.js"));
-
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/style.css",
-                      "~/Content/all.css"));
-
-            bundles.Add(new StyleBundle("~/Content/css-konto").Include(
-                      "~/Content/konto.css"));
-
-            bundles.Add(new StyleBundle("~/Content/css-koszyk").Include(
-                     "~/Content/koszyk.css"));
-
-            bundles.Add(new StyleBundle("~/Content/css-home").Include(
-                     "~/Content/style-home.css"));
-
-            bundles.Add(new StyleBundle("~/Content/css-prod").Include(
-                     "~/Content/style-prod.css"));
+                      "~/Content/style.css"));
         }
     }
 }
